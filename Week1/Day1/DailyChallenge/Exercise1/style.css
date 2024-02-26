@@ -1,0 +1,20 @@
+.cat-content {
+    margin-left: 20px;
+}
+.cat-content h3 {
+    text-decoration: underline;
+}
+.cat-img {
+    text-align: center;
+    margin: 50px;
+}
+.cat-img img {
+    width: 400px;
+    height: 500px;
+}
+.table-heading {
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+}
