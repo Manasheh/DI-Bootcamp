@@ -7,19 +7,65 @@
     font-family: "Ubuntu", sans-serif;
 
 }
-/* section {
+section {
     display: inline-block;
     width: 100vw;
-} */
-section {
-    margin: 10px;
 }
+
+nav {
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+section {
+    position: relative;
+    top: 80px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav .firstitem {
+    color: white;
+    position: relative;
+    top: 13px;
+    left: 30px;
+}
+.seconditem {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 40px;
+    top: 25px;
+    color: white;
+}
+@media only screen and (max-width:600px) {
+    nav {
+        height: 70px;
+    }
+    .firstitem {
+        font-size: 12px;
+        top: 10px;
+    }
+    .seconditem {
+        right: 80px;
+        top: 17px;
+    }
+}
+/* section {
+    margin: 10px;
+} */
+
 section .card {
     display: inline-block;
-    width: 250px;
-    height: 500px;
+    width: 438px;
+    height: 510px;
     position: relative;
-    margin: 10px;
+    /* margin: 14px; */
+    margin-top: 20px;
+    margin-left: 26px;
+    margin-bottom: 20px;
 }
 section .card img {
     width: 100%;
@@ -66,11 +112,11 @@ section .price {
     color: rgb(50, 189, 199);
     font-weight: bold;
     position: relative;
-    left: 58px;
+    left: 155px;
 }
 section .top {
     position: relative;
-    left: 50px;
+    left: 135px;
     margin: 7px 0;
 }
 section span {
@@ -80,7 +126,7 @@ section span {
 .cart {
     border: 2px solid rgb(168, 165, 165);
     position: relative;
-    left: 28px;
+    left: 120px;
     margin-top: 7px;
     border-radius: 3px;
 }
@@ -90,4 +136,40 @@ section span {
     color: rgb(168, 165, 165);
     padding: 5px;
     padding: 10px;
+}
+@media only screen and (max-width: 768px) {
+    section .card {
+        width: 230px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    section .card {
+        width: 200px;
+        height: 350px;
+    }
+    section .top {
+        left: 25px;
+    }
+    section .price {
+        left: 40px;
+    }
+    section .cart {
+        left: 10px;
+    }
+}
+@media only screen and (max-width:600px){
+    section .card {
+        width: 370px;
+        display: block;
+        margin-bottom: 100px;
+    }
+    section .top {
+        left: 110px;
+    }
+    section .price {
+        left: 130px;
+    }
+    section .cart {
+        left: 90px;
+    }
 }

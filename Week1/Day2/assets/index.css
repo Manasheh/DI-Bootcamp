@@ -19,14 +19,26 @@ nav {
 }
 .firstitem {
     position: absolute;
-    left: 40px;
+    left: 30px;
     top: 13px;
 }
 .seconditem {
     position: absolute;
     font-size: 1.5rem;
-    right: 40px;
+    right: 250px;
     top: 25px;
+}
+.signup {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 40px;
+    top: 23px;
+}
+.login {
+    position: absolute;
+    font-size: 1.5rem;
+    right: 150px;
+    top: 23px;
 }
 nav ul {
     list-style: none;
