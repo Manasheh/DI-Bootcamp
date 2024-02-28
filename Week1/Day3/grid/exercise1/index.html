@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+
+    <!-- for container/parent -->
+    <!-- <style>
+        .container {
+            display: grid;
+            grid-template-rows: 50px repeat(2, 150px);
+            grid-template-columns: minmax(auto, 50%) 1fr 3em;
+            gap: 10px;
+        }
+        .element {
+            border: 1px solid red;
+        }
+    </style> -->
+
+    <!-- for item/child -->
+    <style>
+        .container {
+            display: grid;
+            grid-template-rows: 50px repeat(2, 150px);
+            grid-template-columns: minmax(auto, 50%) 1fr 3em 4rem 2rem;
+            gap: 10px 5px;
+            background-color: black;
+            grid-template-areas: 
+            'a a a'
+            'b b c'
+            'b b c'
+            'd d d'
+            ;
+        }
+        .blue {
+            background-color: blue;
+            grid-row: 2 / span 2;
+            grid-column: 1 / span 2;
+            grid-area: a;
+        }
+        .red {
+            background-color: red;
+            grid-area: b;
+            grid-row: 2 /span 2;
+        }
+        .green {
+            background-color: green;
+            grid-area: c;
+        }
+        .yellow {
+            background-color: yellow;
+            grid-area: d;
+        }
+    </style>
+</head>
+<body>
+    <!-- for container -->
+    <!-- <div class="container">
+        <div class="element one"></div>
+        <div class="element two"></div>
+        <div class="element three"></div>
+    </div> -->
+
+    <!-- for items -->
+     <div class="container">
+        <div class="element blue">hello grid !</div>
+        <div class="element red"></div>
+        <div class="element green"></div>
+        <div class="element yellow"></div>
+    </div>
+</body>
+</html>
