@@ -1,37 +1,33 @@
-# # print(6 + 4)
-# print(type('1212' * 2))
+# # question:
+# Using the input function, ask the user for a string. The string must be 10 characters long.
+# If it’s less than 10 characters, print a message which states “string not long enough”.
+# If it’s more than 10 characters, print a message which states “string too long”.
+# If it’s 10 characters, print a message which states “perfect string” and continue the exercise.
 
-# Exercise 1 > In the python shell, Create a variable called my_age, use python to know how old you will be in 123879 years
+# Then, print the first and last characters of the given text.
 
-# my_age = 28
-# my_future_age = 123879 + my_age
-# print(my_future_age)
+# Using a for loop, construct the string character by character: Print the first character, then the second, then the third, until the full string is printed. For example
 
-# # Exercise 2 > In the python shell, Create a variable called first_name and a variable called last_name, and then print your full name using those two variables
-
-# first_name = 'Menashe'
-# last_name = 'Vaiphei'
-# print(first_name, last_name)
-
-#Type casting
+# solution
 
 
-# years_in_israel = 'one'
-# #to convert to number
-# years_future = int(years_in_israel) + 10
-# print(years_future)
+user_input = input(f'enter a string ')
+print(user_input)
+if len(user_input) == 10:
+    print(f"perfect string the first character is {user_input[0]} and the last character is {user_input[-1]}")
+elif len(user_input) < 10:
+    print(f'the entered string is not long enough')
+else:
+    print(f'String is too long')
+    
 
-#concatenate string using f string:
-# first_name = 'Menashe'
-# last_name = 'Vaiphei'
-# print(f'My name is {first_name} {last_name}')
+print(f'the first character is : {user_input[0]}')
+print(f'the last character is: {user_input[-1]}')
 
-#INPUT 
-
-# age = input('What is your age ?')
-# print(f'My age is {type(age)}')
-
-# if int(age) > 18:
-#     print('you can come to the pub !')
+incremented_characters = ''
+for x in user_input:
+    incremented_characters = incremented_characters + x
+    print(incremented_characters)
+    
 
 
