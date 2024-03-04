@@ -26,8 +26,22 @@ print(f'the last character is: {user_input[-1]}')
 
 incremented_characters = ''
 for x in user_input:
-    incremented_characters = incremented_characters + x
+    incremented_characters = incremented_characters + x                                                                   
     print(incremented_characters)
+    # if x != 'e':      
+
+
+# [] = [] + h  >[] = h
+#[h] = [h] + e > he
+#[he] = [he] + l > hel
+#[hel] = [hel] + l > hel
+#[hell] = [hell] + o > hel
+#[hello] = [hello] + w > helllow
+#[hellow] = [hellow] + o > hellowo
+#[hell] = [hellowo] + r > hellowor
+#[hell] = [helloworl] + l > helloworl
+#[hell] = [helloworl] + d > helloworld
+    
     
 
 
