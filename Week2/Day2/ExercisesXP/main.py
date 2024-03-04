@@ -147,14 +147,7 @@
 #  Given a list of names, write a program that asks 
 # teenager for their age, if they are not permitted to watch the movie, remove them from the list.
 # At the end, print the final list.
-
-
-        
-
-
-
-
-
+#solutions 
 
 # total_cost = 0
 # num_of_person = int(input(f'Enter number of person'))
