@@ -35,12 +35,27 @@
 
 # user's word : "cccccaaarrrbbonnnnn" ➞ "carbon
 #solution
-user_word = input('Enter a string ')
-result = "".join(dict.fromkeys(user_word)) 
-print(result) 
+# user_word = input('Enter a string ')
+# result = "".join(dict.fromkeys(user_word)) 
+# print(result) 
 
 # dict.fromkeys(user_word) creates a dictionary, key and unique values.
 #"".join() it joins the unique values of created by the dict.fromkeys
+
+user_word = input('Enter your word: ')
+
+result = []
+
+for i in range(len(user_word)):
+    if i == 0 or user_word[i] != user_word[i -1]:
+        result.append(user_word[i])
+    else:
+        continue
+
+print("".join(result))
+
+        
+
 
 
 
