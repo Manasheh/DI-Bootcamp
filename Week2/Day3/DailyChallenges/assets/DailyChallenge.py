@@ -20,3 +20,5 @@
 # Create a program that prints a list of the items you can afford in the store with the money you have in your wallet.
 # Sort the list in alphabetical order.
 # Return “Nothing” if you can’t afford anything from the store.
+
+#THE SECOND ONE IS KIND OF HARD FOR ME
