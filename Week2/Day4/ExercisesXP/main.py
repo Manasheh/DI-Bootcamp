@@ -72,77 +72,87 @@
 #     for i, name in  enumerate(magician_names):
 #         magician_names[i] = f'The Great {name}'
 # make_great()
-# show_magicians()
+# # show_magicians()
 
-# EXERCISE 7 
-
-
-# import random
-
-# def get_random_temp(season):
-#     # temp = random.randint(-10,40)
-#     if season == 'winter':
-#          temp = random.randint(-10,16)
-#     elif season == 'summer':
-#          temp = random.randint(17,40)
-#     return temp
+# # EXERCISE 7 
 
 
+# # import random
 
-# def main():
-#     random_temp = get_random_temp(input('enter summer or winter '))
-#     if random_temp <= 0:
-#         print('Brrr, thats freezing! Wear some extra layers today!')
-#     elif random_temp > 0 and random_temp <= 16:
-#         print("Quite chilly! Don't forget your coat")
-#     elif random_temp > 16 and random_temp <= 23:
-#         print("It's quite warm outside.")
-#     elif random_temp > 23 and random_temp <= 32:
-#         print("Hot out there! Keep hydrated.")
-#     elif  random_temp > 32 and  random_temp <= -40:
-#         print('Too hot')
-#     print(f'The temperature right now is {random_temp} degrees Celsius.')
-
-# main()
+# # def get_random_temp(season):
+# #     # temp = random.randint(-10,40)
+# #     if season == 'winter':
+# #          temp = random.randint(-10,16)
+# #     elif season == 'summer':
+# #          temp = random.randint(17,40)
+# #     return temp
 
 
-# EXERCISE 8
 
-data = [
-    {
-        "question": "What is Baby Yoda's real name?",
-        "answer": "Grogu"
-    },
-    {
-        "question": "Where did Obi-Wan take Luke after his birth?",
-        "answer": "Tatooine"
-    },
-    {
-        "question": "What year did the first Star Wars movie come out?",
-        "answer": "1977"
-    },
-    {
-        "question": "Who built C-3PO?",
-        "answer": "Anakin Skywalker"
-    },
-    {
-        "question": "Anakin Skywalker grew up to be who?",
-        "answer": "Darth Vader"
-    },
-    {
-        "question": "What species is Chewbacca?",
-        "answer": "Wookiee"
-    }
-]
+# # def main():
+# #     random_temp = get_random_temp(input('enter summer or winter '))
+# #     if random_temp <= 0:
+# #         print('Brrr, thats freezing! Wear some extra layers today!')
+# #     elif random_temp > 0 and random_temp <= 16:
+# #         print("Quite chilly! Don't forget your coat")
+# #     elif random_temp > 16 and random_temp <= 23:
+# #         print("It's quite warm outside.")
+# #     elif random_temp > 23 and random_temp <= 32:
+# #         print("Hot out there! Keep hydrated.")
+# #     elif  random_temp > 32 and  random_temp <= -40:
+# #         print('Too hot')
+# #     print(f'The temperature right now is {random_temp} degrees Celsius.')
 
-def ask_question(data):
-    for i in data:
-        user_question = i['question']
-        print(user_question)
-        user_answer = i['answer']
-        print(user_answer)
-    
-ask_question(data)
+# # main()
+
+
+# # EXERCISE 8
+
+# data = [
+#     {
+#         "question": "What is Baby Yoda's real name?",
+#         "answer": "Grogu"
+#     },
+#     {
+#         "question": "Where did Obi-Wan take Luke after his birth?",
+#         "answer": "Tatooine"
+#     },
+#     {
+#         "question": "What year did the first Star Wars movie come out?",
+#         "answer": "1977"
+#     },
+#     {
+#         "question": "Who built C-3PO?",
+#         "answer": "Anakin Skywalker"
+#     },
+#     {
+#         "question": "Anakin Skywalker grew up to be who?",
+#         "answer": "Darth Vader"
+#     },
+#     {
+#         "question": "What species is Chewbacca?",
+#         "answer": "Wookiee"
+#     }
+# ]
+# for item in data:
+#     for i, j in en:
+#         print(i)
+#     #     for key, value in enumerate(i):
+#     #         # print(f'key: {key} and value: {value}')
+#     #         print(key)
+#     # # for key, value in enumerate(item):
+#     # #     print(f'key : {key}: values :{value}')
+
+
+
+rows = 3
+cols = 3
+
+grid = [[0 for _ in range(cols)] for _ in range(rows)]
+
+# Print the grid
+for row in grid:
+    print(row)
 
 
 
