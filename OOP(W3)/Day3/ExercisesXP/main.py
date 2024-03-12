@@ -42,6 +42,8 @@
 # print(c1 + c2) 
 # print(c1 + c3)
 
+# exercise 2 is in file func.python file and exercise_one.py file
+
 #Exercise 3
 
 # Generate random String of length 5
