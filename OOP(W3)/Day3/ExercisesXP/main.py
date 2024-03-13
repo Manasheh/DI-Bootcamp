@@ -1,45 +1,45 @@
 # Exercise 1
 
-# class Currency:
-#     def __init__(self, currency, amount):
-#         self.currency = currency
-#         self.amount = amount
+class Currency:
+    def __init__(self, currency, amount):
+        self.currency = currency
+        self.amount = amount
 
-#     def __str__(self):
-#         return f"{self.currency} {self.amount}"
+    def __str__(self):
+        return f"{self.currency} {self.amount}"
 
-#     def __int__(self):
-#         return self.amount
+    def __int__(self):
+        return self.amount
     
-#     def __repr__(self):
-#         return f"{self.currency} {self.amount}"
+    def __repr__(self):
+        return f"{self.currency} {self.amount}"
 
-#     def __add__(self, other):
-#         if isinstance(other, Currency):
-#             if self.currency != other.currency:
-#                 raise TypeError("The currencies are not the same")
-#             return Currency(self.currency, self.amount + other.amount)
-#         elif isinstance(other, (int, float)):
-#             return Currency(self.currency, self.amount + other)
-#         else:
-#             raise TypeError("Unsupported type")
+    def __add__(self, other):
+        if isinstance(other, Currency):
+            if self.currency != other.currency:
+                raise TypeError("The currencies are not the same")
+            return Currency(self.currency, self.amount + other.amount)
+        elif isinstance(other, (int, float)):
+            return Currency(self.currency, self.amount + other)
+        else:
+            raise TypeError("Unsupported type")
 
-#     def __iadd__(self, other):
-#         if isinstance(other, Currency):
-#             if self.currency != other.currency:
-#                 raise TypeError("The currencies are not the same")
-#             self.amount += other.amount
-#         elif isinstance(other, (int, float)):
-#             self.amount += other
-#         else:
-#             raise TypeError("Addition not supported")
-#         return self
+    def __iadd__(self, other):
+        if isinstance(other, Currency):
+            if self.currency != other.currency:
+                raise TypeError("The currencies are not the same")
+            self.amount += other.amount
+        elif isinstance(other, (int, float)):
+            self.amount += other
+        else:
+            raise TypeError("Addition not supported")
+        return self
 
-# c1 = Currency('Dollar', 5)
-# c2 = Currency('Dollar', 15)
-# c3 = Currency('Shekel', 25)
+c1 = Currency('Dollar', 5)
+c2 = Currency('Dollar', 15)
+c3 = Currency('Shekel', 25)
 # print(c1 + 10)
-# print(c1 + c2) 
+print(c1 + c2) 
 # print(c1 + c3)
 
 # exercise 2 is in file func.python file and exercise_one.py file
