@@ -1,0 +1,69 @@
+CREATE TABLE actors (
+actor_id SERIAL PRIMARY KEY,
+first_name VARCHAR (50) NOT NULL,
+last_name VARCHAR(100) NOT NULL,
+age DATE NOT NULL,
+number_oscars SMALLINT NOT NULL
+)
+
+INSERT INTO actors (first_name, last_name, age, number_oscars)
+VALUES ('Matt', 'Damon', '08/10/1970', 5);
+
+--  INSERT INTO actors (first_name, last_name, age, number_oscars)
+--  VALUES 
+-- ('George', 'Clooney', '06/05/1961', 2),
+-- ('Gal', 'Gadot', '30/04/1985', 3),
+-- ('Brad', 'Pitt', '18/11/1963', 2);
+	
+-- INSERT INTO actors (first_name, last_name, age, number_oscars)
+-- VALUES ('Meryl', 'Streep', '22/06/1949', 3);
+
+-- INSERT INTO actors (first_name, last_name, age, number_oscars)
+-- VALUES ('Katharine', 'Hepburn', '12/05/1907', 4 );
+
+-- INSERT INTO actors (first_name, last_name, age, number_oscars)
+-- VALUES
+-- ('Leonardo', 'DiCaprio', '11/11/1974', 1),
+-- ('Daniel', 'Day-Lewis', '29/04/1957', 3),
+-- ('Tom', 'Hanks', '09/07/1956', 2);
+
+-- SELECT first_name FROM actors
+
+-- SELECT * FROM actors WHERE first_name = 'Gal'
+-- SELECT number_oscars FROM actors WHERE first_name = 'Gal'
+
+-- SELECT first_name, last_name FROM actors WHERE NUMBER_OSCARS >= 3
+-- AND age = '12/05/1907';
+
+-- SELECT * FROM actors WHERE last_name LIKE '%mon%'
+-- SELECT * FROM actors WHERE last_name LIKE '%y'
+-- SELECT * FROM actors WHERE last_name LIKE 'Ga%'
+-- SELECT * FROM actors WHERE last_name ILIKE 'ga%'
+
+-- SELECT * FROM actors LIMIT 2;
+-- SELECT * FROM actors OFFSET 2;
+
+-- SELECT * FROM actors WHERE age > '01/01/1960' ORDER BY first_name ASC;
+
+
+-- UPDATE/DELETE/RESET
+
+-- UPDATE actors
+-- SET first_name = 'Angelina',
+-- last_name = 'Jolie'
+-- WHERE first_name = 'Brad
+
+-- DELETE FROM actors
+-- WHERE first_name = 'Angelina'
+
+-- TRUNCATE
+
+-- HOW TO CHANGE COLUMN NAME
+
+-- ALTER TABLE actors RENAME COLUMN fisrt_name to first_name;
+
+-- HOW TO DELETE THE WHOLE TABLE
+
+-- DROP TABLE IF EXISTS actors
+
+-- SELECT * FROM actors
