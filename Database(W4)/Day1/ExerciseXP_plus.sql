@@ -8,7 +8,6 @@ CREATE TABLE students(
 	birth_day DATE
 );
 
-DELETE FROM students;
 INSERT INTO students(first_name, last_name, birth_day) VALUES
 	('Marc', 'Benichou', '02/11/1998'),
 	('Yoan', 'Cohen', '03/12/2010'),	
