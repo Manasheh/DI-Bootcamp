@@ -31,3 +31,10 @@
 
 -- SELECT * FROM payment 
 -- INNER JOIN customer ON customer.customer_id = payment.customer_id ORDER BY payment.staff_id ASC
+
+
+#DAILY CHALLENGE:
+-- 1) 0
+-- 2) 2
+-- 3) 0
+-- 4) 2
