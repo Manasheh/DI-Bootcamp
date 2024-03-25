@@ -22,20 +22,7 @@ If the word “bad” does not come after “not” or the words are not in the 
 //     console.log(sentence.replace('not that bad', 'good'))
 // }
 
-// star = ''
-// for (let i = 1; i <= 6; i++) {
-//     star = star + ' * '
-//     console.log(star);
-// }
 
-// star = ''
-// for (let i = 1; i<=3; i++) { //*,**,***,****,*****,******
-//     for (let j = 1; j<=2; j++) { 
-//         star = star + " * "
-//         console.log(star);
-//     }
-
-// }
 
 
 
