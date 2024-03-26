@@ -1,0 +1,11 @@
+navBar = document.getElementById('navBar')
+navBar.setAttribute('navBar', 'socailNetworkNavigation')
+const li = document.createElement('li')
+const textNode = document.createTextNode('Logout')
+li.append(textNode)
+const ul = document.querySelector('ul')
+ul.append(li)
+const firstEle = ul.firstElementChild.querySelector('a')
+const lastEle = ul.lastElementChild
+console.log(firstEle.textContent)
+console.log(lastEle.textContent)
