@@ -29,11 +29,18 @@
 // })
 
 
-const btns = document.querySelectorAll('#book-list .delete')
-// now i have all the class with delete
-// now i want to loop all the delete class, if i click anyone of it i should delte
-// first i need to convert it into an array
-
-Array.from(btns).forEach(item => {
-    const li = 
+// delete books
+const list = document.querySelector('#book-list ul')
+list.addEventListener('click', function(e) {
+    if (e.target.className == 'delete') {
+        const li = e.target.parentElement
+        ul.removeChild(li)
+    }
 })
+
+//  add books
+
+
+
+
+
