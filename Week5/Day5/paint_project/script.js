@@ -83,15 +83,24 @@ function colorGrids() {
 colorGrids()
 
 function displayColor(color) {
-    const smallGrids = document.querySelectorAll('.smallGrid')
-
+    const smallGrids = document.querySelectorAll('.smallGrid');
+    let isMouseDown = false;
+    document.addEventListener('mousedown', function() {
+        isMouseDown = true;
+    });
+    document.addEventListener('mouseup', function() {
+        isMouseDown = false;
+    });
     smallGrids.forEach(item => {
-        item.addEventListener('mouseover', function () {
-            item.style.backgroundColor = color
-        })
-    })
+        item.addEventListener('mousemove', function() {
+            if (isMouseDown) {
+                item.style.backgroundColor = color;
+            }
+        });
+    });
 }
 displayColor()
+
 
 
 
