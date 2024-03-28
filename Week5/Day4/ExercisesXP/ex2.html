@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="firstname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lastname" required><br><br>
+        <input type="submit" value="Submit" id="submit">
+      </form> 
+      <ul class="usersAnswer"></ul>
+    <script>
+
+
+        const userForm = document.forms
+        const form = document.querySelector('form')
+        // console.log(userForm);
+        const fname = document.getElementById('fname')
+        const lname = document.getElementById('lname')
+        const submit = document.getElementById('submit')
+        const ul = document.querySelector('.usersAnswer')
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const first_name = fname.value
+            const last_name = lname.value
+            // console.log(first_name);
+            // console.log(lase_name);
+            const firstLi = document.createElement('li')
+            const secondLi = document.createElement('li')
+            firstLi.textContent = first_name
+            secondLi.textContent = last_name
+            ul.appendChild(firstLi)
+            ul.appendChild(secondLi)
+            form.reset()
+
+
+        })
+
+        // console.log(fname);
+        // console.log(lname);
+        // console.log(submit);
+
+        const firstName = document.getElementsByName('firstname')
+        const lastName = document.getElementsByName('lastname')
+        // console.log(firstName);
+        // console.log(lastName);
+    </script>
+</body>
+</html>
