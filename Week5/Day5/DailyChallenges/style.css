@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+li.is-done {
+    text-decoration: line-through;
+}
