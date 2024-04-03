@@ -107,22 +107,22 @@ Excepted output: [ [ 'user1', 36546 ], [ 'user2', 185666 ], [ 'user3', 180630 ] 
 // Create a farmerCow object that is an instance of the class Mamal. The object accepts a name, a type and a color and calls the sound method that “moos” her information.
 // For example: Moooo I'm a cow, named Lily and I'm brown and white
 
-// class Animal {
-//     constructor(name, type, color) {
-//         this.name = name;
-//         this.type = type;
-//         this.color = color;
-//     }
-// }
+class Animal {
+    constructor(name, type, color) {
+        this.name = name;
+        this.type = type;
+        this.color = color;
+    }
+}
 
-// class Mammal extends Animal {
-//     makeSound(sound) {
-//         return `${sound} I'm a ${this.type}, named ${this.name} and I'm ${this.color}`;
-//     }
-// }
+class Mammal extends Animal {
+    makeSound(sound) {
+        return `${sound} I'm a ${this.type}, named ${this.name} and I'm ${this.color}`;
+    }
+}
 
-// const farmerCow = new Mammal('Lily', 'cow', 'brown and white')
-// console.log(farmerCow.makeSound('Moooo'));
-// const dog1 = new Mammal('Browny', 'dog', 'brown and white')
-// console.log(dog1.makeSound('woof'));
+const farmerCow = new Mammal('Lily', 'cow', 'brown and white')
+console.log(farmerCow.makeSound('Moooo'));
+const dog1 = new Mammal('Browny', 'dog', 'brown and white')
+console.log(dog1.makeSound('woof'));
 

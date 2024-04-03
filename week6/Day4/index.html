@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Get All Users</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/users">
+        <input name="id"/>
+        <input type="submit" value="Send"/>
+    </form>
+    <h2>Get Post</h2>
+    <form method="GET" action="https://jsonplaceholder.typicode.com/posts">
+        <input type="hidden" id="userid" name="userId" value=""/>
+        <input type="submit" value="dfgdfhdhsdg"/>
+    </form>
+    <script>
+        document.getElementById('userid').value = 8;
+    </script>
+    <h2>Contact Form</h2>
+    <form method="GET">
+        Name: <input name="username"/><br/>
+        Phone: <input name="phone"/><br/>
+        Message: <input name="msg"/><br/>
+        Url: <input name="msg"/><br/>
+        <input type="submit" value="Send"/>
+    </form>
+
+    <h2>Contact Form With POST</h2>
+    <form method="POST" action="https://jsonplaceholder.typicode.com/posts">
+        Userid: <input name="userId"/><br/>
+        Title: <input name="title"/><br/>
+        Body: <input name="body"/><br/>
+        <input type="submit" value="Send"/>
+    </form>
+
+    <script src="script.js" defer async></script>
+</body>
+</html>
+
+
+<!-- 
+Add a user
+1. A form with post method
+2. Action https://users-18kl.onrender.com/user
+3. Input name -> name
+3. input name -> email
+4. input name -> username
+5.  Submit
+ -->
+
+
+    <!-- Add a user (exercise)
+    1) A form with the post request
+    2)Action 
+    3)Input name -> name
+    4)Input Username -> username
+    5)Input Email -> email
+    6) Submit  -->
+
+    <!-- <form action="https://users-18kl.onrender.com/user" method="POST">
+        Name: <input name = 'name'>
+        Username: <input name = 'username'>
+        Email: <input name = 'email'>
+        <input type="submit" value="send">
+    </form> -->
+    <!-- <div class="root"></div> -->
+    <script src="script.js"></script>
+</body>
+</html>
