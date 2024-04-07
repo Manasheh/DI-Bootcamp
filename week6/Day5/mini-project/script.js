@@ -2,7 +2,6 @@ const input = document.querySelector('#input')
 const main = document.querySelector('#main')
 const ul = document.querySelector('#ul')
 
-
 const robots = [
     {
       id: 1,
@@ -95,7 +94,7 @@ function robotList () {
         </div>
         `
         ul.appendChild(li)
-        main.appendChild(ul)
+        main.appendChild(ul) // section 
     })
 }
 
