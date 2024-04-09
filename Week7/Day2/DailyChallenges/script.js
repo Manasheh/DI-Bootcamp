@@ -10,7 +10,7 @@ const search4random = async (e) => {
   try {
     const response = await fetch(url);
     const result = await response.json();
-    console.log(result);
+    // console.log(result);
     if (result.meta.status === 200) {
       preLoadImages(result.data.images)
         .then((img) => {
