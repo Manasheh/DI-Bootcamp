@@ -77,8 +77,8 @@ const {products} = require('./config/data.js')
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
-app.listen(3001, () => {
-    console.log('run on 3001');
+app.listen(3002, () => {
+    console.log('run on 3002');
 })
 
 
