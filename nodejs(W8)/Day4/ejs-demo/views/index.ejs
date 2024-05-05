@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <h1>EJS is a cool template engine</h1>
+    Hi <%= locals.user.firstName %> <%= locals.user.lastName %>
+    <!-- if else-->
+    <% if(locals.login) { %>
+            <h2>Welcome!</h2>
+    <% } else { %>
+        <h2>Please login!</h2>
+    <% }  %>
+
+
+    <!-- loop -->
+    <% for(const key in students) { %> 
+        <h2><%= key%> <%= students[key]%></h2>
+    <% }  %>
+
+    <% 
+       let html = Object.entries(students).map(([key,value])=>{
+          return `<div>${value}</div>`
+       })
+
+    %>
+
+    <%- html.join('')%>
+
+    <%- include('partials/footer') %>
+</body>
+</html>

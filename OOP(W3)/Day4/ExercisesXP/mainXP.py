@@ -23,55 +23,55 @@
 # If the user inputs incorrect data, print an error message and end the program.
 # If the user inputs correct data, run your code.
 
-# import os
-# import json
-# import random
+import os
+import json
+import random
 
-# dir_path = os.path.dirname(os.path.realpath(__file__))
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
-# def get_words_from_file():
-#     with open (dir_path + '\\word_file.txt', 'r') as f:
-#         content = f.read()
-#         words = content.split()
-#         return words
+def get_words_from_file():
+    with open (dir_path + '\\word_file.txt', 'r') as f:
+        content = f.read()
+        words = content.split()
+        return words
 
-# def get_random_sentence(length):
-#     random_words = random.choices(get_words_from_file(), k = length)
-#     return ' '.join(random_words).lower()
+def get_random_sentence(length):
+    random_words = random.choices(get_words_from_file(), k = length)
+    return ' '.join(random_words).lower()
 
-# def main():
-#     print('Prints random sentence of desire length')
-#     try:
-#         length = int(input("Enter a valid number"))
-#         if length > 2 and length < 20:
-#             print(get_random_sentence(length))
+def main():
+    print('Prints random sentence of desire length')
+    try:
+        length = int(input("Enter a valid number"))
+        if length > 2 and length < 20:
+            print(get_random_sentence(length))
         
-#     except:
-#         print('Invalid input')
-# main()
+    except:
+        print('Invalid input')
+main()
 
 
 #Exercise 2
 
-# import json
-# sampleJson = """{ 
-#    "company":{ 
-#       "employee":{ 
-#          "name":"emma",
-#          "payable":{ 
-#             "salary":7000,
-#             "bonus":800
-#          }
-#       }
-#    }
-# }
-# """
+import json
+sampleJson = """{ 
+   "company":{ 
+      "employee":{ 
+         "name":"emma",
+         "payable":{ 
+            "salary":7000,
+            "bonus":800
+         }
+      }
+   }
+}
+"""
 
-# sample = json.loads(sampleJson)
-# data = sample['company']['employee']['payable']['salary']
-# sample['company']['employee']['birth_date'] = '01-01-1995'
-# print(sample)
+sample = json.loads(sampleJson)
+data = sample['company']['employee']['payable']['salary']
+sample['company']['employee']['birth_date'] = '01-01-1995'
+print(sample)
 
-# with open ('random.json', 'w') as f:
-#     json.dump(sample, f, indent = 2)
+with open ('random.json', 'w') as f:
+    json.dump(sample, f, indent = 2)
 

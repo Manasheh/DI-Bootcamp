@@ -1,0 +1,8 @@
+.userinfo {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    background-color: lightcoral;
+}

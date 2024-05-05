@@ -6,7 +6,7 @@ module.exports = {
     const { username, password, email, first_name, last_name } = user;
     const trx = await db.transaction();
     try {
-      // Insert user data into the 'users' table
+      // Insert user data into the 'users' table // returns an array so need to store userid in an array
       const [userid] = await trx("users").insert(
         { email, username, first_name, last_name },
         ["id"]
