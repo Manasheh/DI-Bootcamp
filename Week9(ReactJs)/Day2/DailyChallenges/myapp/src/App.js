@@ -9,12 +9,16 @@ function App() {
     { name: "Java", votes: 0 }
   ]);
 
-  const handleClick = (index) => {
-    setLanguages(prevLanguages => {
-      const updatedLanguages = [...prevLanguages]; 
-      updatedLanguages[index] = { ...updatedLanguages[index], votes: updatedLanguages[index].votes + 1 }; 
-      return updatedLanguages; 
-    });
+  // const handleClick = (index) => {
+  //   setLanguages(prevLanguages => {
+  //     const updatedLanguages = [...prevLanguages]; 
+  //     updatedLanguages[index] = { ...updatedLanguages[index], votes: updatedLanguages[index].votes + 1 }; 
+  //     return updatedLanguages; 
+  //   });
+  // }
+  const vote = (lang) => {
+    lang.votes++
+    setLanguages([...languages])
   }
   
 
@@ -25,7 +29,7 @@ function App() {
         <div key={index} style={{display:'flex', border: '1px solid black', backgroundColor:'#ffebcd', margin:'5px', width: '25rem', justifyContent: 'space-around', alignItems:'center'}}>
           <span>{language.votes}</span>
           <p>{language.name}</p>
-          <button style={{border: 'none', backgroundColor:'#ffebcd', color: 'green', fontSize:'1.5rem'}} onClick={() => handleClick(index)}>Click Here</button>
+          <button style={{border: 'none', backgroundColor:'#ffebcd', color: 'green', fontSize:'1.5rem'}} onClick={() => vote(language)}>Click Here</button>
         </div>
       ))}
     </div>
