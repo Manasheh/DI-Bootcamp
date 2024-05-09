@@ -1,0 +1,93 @@
+:root {
+    --blue: #051c33;
+}
+
+body {
+    text-align: center;
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+    color: #3f4850;
+}
+.title {
+    font-family: "Lobster", "Josefin Sans", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    color: var(--blue);
+}
+.searc-form {
+    max-width: 460px;
+    display: flex;
+    margin: 0 auto;
+}
+input {
+    font-size: 1rem;
+    width: 100%;
+    background-color: #edeff0;
+    padding: 10px 15px;
+    border: 3px solid #d7dbdf;
+    border-right: none;
+    border-radius: .35rem 0 0 .35rem;
+    outline: none;
+}
+button[type = 'submit'] {
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 .35em .35em 0;
+    cursor: pointer;
+}
+
+nav {
+    margin-bottom:40px ;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    gap: 1rem;
+}
+
+@media only screen and (width > 768px) {
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+nav li {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: var(--blue);
+    color: white;
+    /* padding: 1rem 2rem; */
+}
+
+h2 {
+    font: 2rem;
+    text-transform: capitalize;
+    color: var(--blue);
+}
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+.photo-container > div {
+    width: 220px;
+    height: 165px;
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    scale: 1.25;
+    transition: scale 1.25s;
+}
+
+.photo-container img:hover {
+    scale: 1;
+}
