@@ -35,17 +35,12 @@ function Search() {
     // console.log(tempInfo);
 
     useEffect(() => {
-        // any function we need to render
         getWeatherInfo()
     }, [])
   return (
     <>
     <WeatherInfo.Provider value={{tempInfo, setTempInfo}} className='wrap'>
-        {/* <div className='search'>
-            <input type="search" placeholder='Search city name...' id='search' onChange={(e) => setSearchTerm(e.target.value)} value={searchTerm}/>
-        <button className='searchButton' onClick={getWeatherInfo}>search</button>
-        </div> */}
-        {/* <div class="container"> */}
+     
   
   <form>
     <div class="form-group d-flex" >
@@ -54,7 +49,6 @@ function Search() {
     </div>
    
   </form>
-{/* </div> */}
     <WeatherDetails />
     </WeatherInfo.Provider>
     </>

@@ -123,7 +123,6 @@ body {
   text-align: center;
   align-items: center;
   color: #70c1b3;
-  /* background-color: blanchedalmond; */
 }
 
 .widget .extra-temp .extra-info-leftside {
@@ -184,11 +183,3 @@ body {
   margin-bottom: 50px;
 }
 
-/*Resize the wrap to see the search bar change!*/
-/* .wrap {
-  width: 30%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
