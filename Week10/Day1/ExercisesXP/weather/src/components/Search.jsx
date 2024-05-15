@@ -4,7 +4,7 @@ import './Styles.css'
 
 export const WeatherInfo = createContext()
 function Search() {
-    const [searchTerm, setSearchTerm] = useState('delhi')
+    const [searchTerm, setSearchTerm] = useState('Tel aviv')
     const [tempInfo, setTempInfo] = useState({})
 
     //useEffect
