@@ -9,10 +9,14 @@ const {getAllData,
 
 } = require('../controller/controller.js')
 
-router.get('/', getAllData)
-router.get('/:id', getDataById)
-router.post('/', addData)
+router.get('/', getAllData) //1
+router.get('/:id', getDataById) //2
+router.post('/', addData) //3
 router.post('/:id', addDataById)
 router.delete('/:id', deleteData)
 
 module.exports = router
+
+
+localhost:3000/3
+method : get

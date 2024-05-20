@@ -1,4 +1,4 @@
-const express = require('express')
+// const express = require('express')
 const data = require('../config/data.js')
 const { _getAllData,
      _getData,
